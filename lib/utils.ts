@@ -23,5 +23,5 @@ export function getRelativeWeekday(date: Date): string {
 }
 
 export function getWeatherIconUrl(icon: string): string {
-  return `https://${icon}`;
+  return `${icon}`;
 }
