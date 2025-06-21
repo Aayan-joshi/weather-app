@@ -1,5 +1,5 @@
 import React from 'react'
-import WeatherCard from './WeatherCard'
+import WeatherCard from '../WeatherCard'
 import { getWeatherDetails, getWeatherForecast } from '@/api/api';
 import { ForecastResponse } from '@/types/forecast';
 import { Sun } from 'lucide-react';

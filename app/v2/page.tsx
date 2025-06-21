@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 
-import WeatherGrid from "@/components/WeatherGrid";
+import WeatherGrid from "@/components/v2/WeatherGridv2";
 import WeatherCard from "@/components/WeatherCard";
 import DigitalClock from "@/components/DigitalClock";
 import Sidebar from "@/components/Navigation/Sidebar";
@@ -9,8 +9,9 @@ import Sidebar from "@/components/Navigation/Sidebar";
 
 
 export default async function Home() {
-  const currentCity = "Kathmandu";
-  const timezone = "Asia/Kathmandu";
+  const currentCity = "Arlington TX";
+  // const timezone = "Asia/Kathmandu";
+  const timezone = "US/Central";
 
   return (
     <section className={`h-[100vh] w-full bg-blue-400 flex overflow-y-scroll overflow-x-clip px-4`}>
@@ -21,7 +22,11 @@ export default async function Home() {
                 <h1 className={`text-6xl py-8 max-md:text-right max-md:text-4xl text-wrap`}>Hello <span className={`font-semibold text-accent max-md:text-4xl text-wrap`}>{currentCity}</span></h1>
              </div>
 
-            <WeatherGrid currentCity={currentCity} />
+            <WeatherGrid currentCity={currentCity} timezone={timezone} />
+
+
+
+            
 
             {/* <WeatherCard
               currentCity={currentCity}

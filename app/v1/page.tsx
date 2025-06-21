@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 
-import WeatherGrid from "@/components/WeatherGrid";
+import WeatherGrid from "@/components/v1/WeatherGrid";
 import WeatherCard from "@/components/WeatherCard";
 import DigitalClock from "@/components/DigitalClock";
 
